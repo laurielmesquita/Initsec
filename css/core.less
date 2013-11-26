@@ -7,30 +7,66 @@
 ================================================ */
 
 @color1: #000000;
+@color2: #FFFFFF;
+@color3: #F44949;
+@color4: #42D0CB;
+@color5: #2B2B2B;
+
+.mgt {
+	margin-top: 93px;
+}
+
+.test1 {
+	height: 1000px;
+	background-color: @color4;
+}
+.test2 {
+	height: 1000px;
+	background-color: @color3;
+}
 
 /* MENU RULES */
 .navbar-toggle {
 	margin-top: 18px;
-	margin-right: 25px;
-}
-.navbar-brand {
-	margin-left: 15px;
+	margin-right: 18px;
 }
 .navbar-default {
 	border: none;
+	background-color: #ffffff;
+	background-color: rgba(255,255,255, .8);
 }
 .navbar-nav {
-	margin-top: 20px;
+	margin-top: 45px;
 }
 .navbar-nav > li > a {
+	text-transform: uppercase;
+	font-size: 18px;
 	font-family: 'proxima_nova_rgbold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-	color: @color1;
 	background-color: transparent;
+	color: @color1;
+}
+
+/* CONTAINER RULES */
+.wrap {
+	padding: 80px 0;
+}
+
+/* BACKGROUND RULES */
+.color1 {
+	background-color: @color2;
+}
+.color2 {
+	background-color: @color3;
+}
+.color3 {
+	background-color: @color4;
+}
+.color4 {
+	background-color: @color5;
 }
 
 /* RESPONSIVE RULES */

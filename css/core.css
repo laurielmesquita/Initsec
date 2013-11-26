@@ -5,29 +5,57 @@
  Layout online since:	2013
          Last Change:	26.11.2013
 ================================================ */
+.mgt {
+  margin-top: 93px;
+}
+.test1 {
+  height: 1000px;
+  background-color: #42d0cb;
+}
+.test2 {
+  height: 1000px;
+  background-color: #f44949;
+}
 /* MENU RULES */
 .navbar-toggle {
   margin-top: 18px;
-  margin-right: 25px;
-}
-.navbar-brand {
-  margin-left: 15px;
+  margin-right: 18px;
 }
 .navbar-default {
   border: none;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .navbar-nav {
-  margin-top: 20px;
+  margin-top: 45px;
 }
 .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 18px;
   font-family: 'proxima_nova_rgbold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #000000;
   background-color: transparent;
+  color: #000000;
+}
+/* CONTAINER RULES */
+.wrap {
+  padding: 80px 0;
+}
+/* BACKGROUND RULES */
+.color1 {
+  background-color: #ffffff;
+}
+.color2 {
+  background-color: #f44949;
+}
+.color3 {
+  background-color: #42d0cb;
+}
+.color4 {
+  background-color: #2b2b2b;
 }
 /* RESPONSIVE RULES */
 @media (min-width: 480px) and (max-width: 767px) {

@@ -10,3 +10,12 @@ if (!supportsSVG()) {
         }
     }
 }
+$('.nav').onePageNav({
+    currentClass: 'active',
+    changeHash: false,
+    scrollSpeed: 750,
+    scrollOffset: 93,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing',
+});
