@@ -1,0 +1,41 @@
+/* ================================================
+              Author:	Lauriel Mesquita
+             Website:	Initsec
+         Description:	HTML5/OOCSS3/LESS
+ Layout online since:	2013
+         Last Change:	26.11.2013
+================================================ */
+
+@color1: #000000;
+
+/* MENU RULES */
+.navbar-toggle {
+	margin-top: 18px;
+	margin-right: 25px;
+}
+.navbar-brand {
+	margin-left: 15px;
+}
+.navbar-default {
+	border: none;
+}
+.navbar-nav {
+	margin-top: 20px;
+}
+.navbar-nav > li > a {
+	font-family: 'proxima_nova_rgbold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: @color1;
+	background-color: transparent;
+}
+
+/* RESPONSIVE RULES */
+@media (min-width: 480px) and (max-width: 767px) {
+	.navbar-toggle {
+		margin-top: 37px;
+	}
+}
