@@ -21,21 +21,21 @@
 }
 @font-face {
     font-family: 'proxima_novaextrabold';
-    src: url('./fonts/proximanova-extrabold.eot');
-    src: url('./fonts/proximanova-extrabold.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/proximanova-extrabold.woff') format('woff'),
-         url('./fonts/proximanova-extrabold.ttf') format('truetype'),
-         url('./fonts/proximanova-extrabold.svg#proxima_novaextrabold') format('svg');
+    src: url('../fonts/proximanova-extrabold.eot');
+    src: url('../fonts/proximanova-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-extrabold.woff') format('woff'),
+         url('../fonts/proximanova-extrabold.ttf') format('truetype'),
+         url('../fonts/proximanova-extrabold.svg#proxima_novaextrabold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url('./fonts/proximanova-regular.eot');
-    src: url('./fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/proximanova-regular.woff') format('woff'),
-         url('./fonts/proximanova-regular.ttf') format('truetype'),
-         url('./fonts/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
+    src: url('../fonts/proximanova-regular.eot');
+    src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular.woff') format('woff'),
+         url('../fonts/proximanova-regular.ttf') format('truetype'),
+         url('../fonts/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -67,6 +67,7 @@ template {
   display: none;
 }
 html {
+	font-size:100%;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -3916,14 +3917,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-bottom: 15px;
   }
 }
-@media (min-width: 768px) {
   .navbar-left {
     float: left !important;
   }
   .navbar-right {
     float: right !important;
   }
-}
 .navbar-form {
   margin-left: -15px;
   margin-right: -15px;
