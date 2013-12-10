@@ -14,6 +14,8 @@
 @color6: #303030;
 @color7: #D33939;
 @color8: #34C1BC;
+@color9: #A73B3B;
+@color10: #249D99;
 
 @font-exbold: 'proxima_novaextrabold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-bold: 'proxima_nova_rgbold', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,16 +24,9 @@
 .rounded-corners (@radius: 5px) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
+  border-radius: @radius;
   -ms-border-radius: @radius;
   -o-border-radius: @radius;
-  border-radius: @radius;
-}
-
-.mgt {
-	margin-top: 115px;
-}
-.mgb-1 {
-	margin-bottom: 200px;
 }
 
 /* MENU RULES */
@@ -77,22 +72,31 @@ h1.headline-tt {
 h1.headline-tt-2 {
 	margin: 0 0 50px;
 	font-size: 62px;
-	color: @color2;
 
 	small {
 		font-size: 30px;
-		color: #A73B3B;
 	}
 }
-.about p {
-	font-size: 18px;
+p {
 	margin: 0 0 35px;
+	font-size: 18px;
+}
+.about p {
 	color: @color2;
 }
 .shield	img {
 	margin: 60px auto 0;
 }
-
+.services {
+	h2 {
+		color: @color1;
+	}
+	.btn-lg {
+		padding: 15px 25px;
+		width: 100%;
+		font-size: 18px;
+	}
+}
 /* SHADOWS E BUTTONS RULES */
 a.btn,
 .btn:hover,
@@ -108,6 +112,7 @@ a.btn,
 	position: relative;
 	background-color: @color3;
 	box-shadow: 0 4px @color7;
+
 		&:hover {
 			top: 4px;
 			background-color: tint(@color3, 10%);
@@ -115,11 +120,33 @@ a.btn,
 		}
 }
 .btn-2 {
+	position: relative;
 	background-color: @color4;
 	box-shadow: 0 4px @color8;
+
+		&:hover {
+			top: 4px;
+			background-color: tint(@color4, 20%);
+			box-shadow: 0 0 @color7;
+		}
 }
 
-/* BACKGROUND RULES */
+/* COLORS AND BACKGROUNDS RULES */
+.white {
+	color: @color2;
+}
+.black {
+	color: @color1;
+}
+.green-dark {
+	color: @color10;
+}
+.red {
+	color: @color3;
+}
+.red-dark {
+	color: @color9;
+}
 .color1 {
 	background-color: @color2;
 }
@@ -135,6 +162,17 @@ a.btn,
 .initsec-bg-1 {
 	background: url('../images/design/woman.jpg') no-repeat bottom right;
 	background-size: contain;
+}
+
+/* FIX RULES */
+.mgt {
+	margin-top: 115px;
+}
+.mgb-1 {
+	margin-bottom: 200px;
+}
+h1.mgb-2 {
+	margin-bottom: 10px;
 }
 
 /* RESPONSIVE RULES */
@@ -154,6 +192,9 @@ a.btn,
 	.btn-lg {
 		padding: 10px 20px;
 	}
+	h2 {
+		font-size: 23px;
+	}
 }
 @media (max-width: 768px) {
 	ul.initsec-nav-icon {
@@ -168,6 +209,9 @@ a.btn,
 	}
 	ul.initsec-nav-icon li a .glyphicon {
 		font-size: 1.8rem;
+	}
+	.services {
+		text-align: center;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px) {

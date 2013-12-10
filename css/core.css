@@ -5,12 +5,6 @@
  Layout online since:	2013
          Last Change:	26.11.2013
 ================================================ */
-.mgt {
-  margin-top: 115px;
-}
-.mgb-1 {
-  margin-bottom: 200px;
-}
 /* MENU RULES */
 .navbar-toggle {
   margin-top: 13px;
@@ -52,19 +46,27 @@ h1.headline-tt {
 h1.headline-tt-2 {
   margin: 0 0 50px;
   font-size: 62px;
-  color: #ffffff;
 }
 h1.headline-tt-2 small {
   font-size: 30px;
-  color: #A73B3B;
+}
+p {
+  margin: 0 0 35px;
+  font-size: 18px;
 }
 .about p {
-  font-size: 18px;
-  margin: 0 0 35px;
   color: #ffffff;
 }
 .shield img {
   margin: 60px auto 0;
+}
+.services h2 {
+  color: #000000;
+}
+.services .btn-lg {
+  padding: 15px 25px;
+  width: 100%;
+  font-size: 18px;
 }
 /* SHADOWS E BUTTONS RULES */
 a.btn,
@@ -88,10 +90,31 @@ a.btn,
   box-shadow: 0 0 #d33939;
 }
 .btn-2 {
+  position: relative;
   background-color: #42d0cb;
   box-shadow: 0 4px #34c1bc;
 }
-/* BACKGROUND RULES */
+.btn-2:hover {
+  top: 4px;
+  background-color: #68d9d5;
+  box-shadow: 0 0 #d33939;
+}
+/* COLORS AND BACKGROUNDS RULES */
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.green-dark {
+  color: #249d99;
+}
+.red {
+  color: #f44949;
+}
+.red-dark {
+  color: #a73b3b;
+}
 .color1 {
   background-color: #ffffff;
 }
@@ -107,6 +130,16 @@ a.btn,
 .initsec-bg-1 {
   background: url('../images/design/woman.jpg') no-repeat bottom right;
   background-size: contain;
+}
+/* FIX RULES */
+.mgt {
+  margin-top: 115px;
+}
+.mgb-1 {
+  margin-bottom: 200px;
+}
+h1.mgb-2 {
+  margin-bottom: 10px;
 }
 /* RESPONSIVE RULES */
 @media (max-width: 479px) {
@@ -125,6 +158,9 @@ a.btn,
   .btn-lg {
     padding: 10px 20px;
   }
+  h2 {
+    font-size: 23px;
+  }
 }
 @media (max-width: 768px) {
   ul.initsec-nav-icon {
@@ -139,6 +175,9 @@ a.btn,
   }
   ul.initsec-nav-icon li a .glyphicon {
     font-size: 1.8rem;
+  }
+  .services {
+    text-align: center;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
