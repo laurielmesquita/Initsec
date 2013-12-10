@@ -17,5 +17,4 @@ $('.nav').onePageNav({
     scrollOffset: 115,
     scrollThreshold: 0.5,
     filter: '',
-    easing: 'swing',
 });

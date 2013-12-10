@@ -3,7 +3,7 @@
              Website:	Initsec
          Description:	HTML5/OOCSS3/LESS
  Layout online since:	2013
-         Last Change:	26.11.2013
+         Last Change:	10.12.2013
 ================================================ */
 
 @color1: #000000;
@@ -58,7 +58,6 @@
 .wrap {
 	padding-top: 90px;
 	padding-bottom: 90px;
-	min-height: 300px;
 }
 
 /* HEADINGS RULES */
@@ -85,14 +84,14 @@ p {
 	color: @color2;
 }
 .shield	img {
-	margin: 60px auto 0;
+	margin: 0 auto;
 }
 .services {
 	h2 {
 		color: @color1;
 	}
 	.btn-lg {
-		padding: 15px 25px;
+		padding: 17px 25px 15px;
 		width: 100%;
 		font-size: 18px;
 	}
@@ -129,6 +128,42 @@ a.btn,
 			background-color: tint(@color4, 20%);
 			box-shadow: 0 0 @color7;
 		}
+}
+
+/* FORM RULES */
+.section-gp {
+	margin-bottom: 20px;
+}
+.section-gp input.form-control,
+.section-gp textarea.form-control {
+	border: 3px solid #98edea;
+	padding: 30px;
+	background-color: @color4;
+	font-size: 18px;
+	color: @color2;
+}
+.section-gp input:focus,
+.section-gp textarea:focus,
+.section-gp .btn:hover {
+	background-color: #5de3de;
+}
+.section-gp textarea.form-control {
+	height: 230px;
+}
+.section-gp .btn {
+	color: @color2;
+	border: none;
+	padding: 18px 25px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: @color10;
+	font-family: 'proxima_nova_rgbold';
+}
+
+/* FOOTER RULES */
+footer .wrap p {
+	text-align: center;
+	color: @color2;
 }
 
 /* COLORS AND BACKGROUNDS RULES */
@@ -212,6 +247,12 @@ h1.mgb-2 {
 	}
 	.services {
 		text-align: center;
+	}
+	.shield	img {
+		margin: 100px auto;
+	}
+	.shield.mac	img {
+		margin: 20px auto 50px;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px) {
