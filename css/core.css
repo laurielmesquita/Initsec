@@ -49,6 +49,23 @@ h1.headline-tt {
   font-family: 'proxima_novaextrabold', "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 56px;
 }
+h1.headline-tt-2 {
+  margin: 0 0 50px;
+  font-size: 62px;
+  color: #ffffff;
+}
+h1.headline-tt-2 small {
+  font-size: 30px;
+  color: #A73B3B;
+}
+.about p {
+  font-size: 18px;
+  margin: 0 0 35px;
+  color: #ffffff;
+}
+.shield img {
+  margin: 60px auto 0;
+}
 /* SHADOWS E BUTTONS RULES */
 a.btn,
 .btn:hover,
@@ -67,6 +84,7 @@ a.btn,
 }
 .btn-1:hover {
   top: 4px;
+  background-color: #f55b5b;
   box-shadow: 0 0 #d33939;
 }
 .btn-2 {
@@ -96,13 +114,13 @@ a.btn,
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  h1.headline-tt {
+  h1.headline-tt,
+  h1.headline-tt-2 {
     font-size: 30px;
     line-height: 26px;
   }
-  .nav li {
-    display: inline;
-    float: left;
+  h1.headline-tt-2 small {
+    font-size: 16px;
   }
   .btn-lg {
     padding: 10px 20px;

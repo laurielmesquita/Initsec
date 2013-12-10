@@ -74,6 +74,24 @@ h1.headline-tt {
 	font-family: @font-exbold;
 	line-height: 56px;
 }
+h1.headline-tt-2 {
+	margin: 0 0 50px;
+	font-size: 62px;
+	color: @color2;
+
+	small {
+		font-size: 30px;
+		color: #A73B3B;
+	}
+}
+.about p {
+	font-size: 18px;
+	margin: 0 0 35px;
+	color: @color2;
+}
+.shield	img {
+	margin: 60px auto 0;
+}
 
 /* SHADOWS E BUTTONS RULES */
 a.btn,
@@ -90,10 +108,11 @@ a.btn,
 	position: relative;
 	background-color: @color3;
 	box-shadow: 0 4px @color7;
-}
-.btn-1:hover {
-	top: 4px;
-	box-shadow: 0 0 @color7;
+		&:hover {
+			top: 4px;
+			background-color: tint(@color3, 10%);
+			box-shadow: 0 0 @color7;
+		}
 }
 .btn-2 {
 	background-color: @color4;
@@ -121,16 +140,16 @@ a.btn,
 /* RESPONSIVE RULES */
 @media (max-width: 479px) {
 	.wrap {
-	padding-top: 30px;
-	padding-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
-	h1.headline-tt {
-	font-size: 30px;
-	line-height: 26px;
+	h1.headline-tt,
+	h1.headline-tt-2 {
+		font-size: 30px;
+		line-height: 26px;
 	}
-	.nav li {
-		display: inline;
-		float: left;
+	h1.headline-tt-2 small {
+		font-size: 16px;
 	}
 	.btn-lg {
 		padding: 10px 20px;
